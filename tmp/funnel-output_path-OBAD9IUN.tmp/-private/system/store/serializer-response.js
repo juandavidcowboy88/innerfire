@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/funnel-input_base_path-XhLHwp9X.tmp/-private/system/store/serializer-response.js

@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/funnel-input_base_path-B4rzfP1S.tmp/decorator-wrappers.js

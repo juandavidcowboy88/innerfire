@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/funnel-input_base_path-wxRk8wYp.tmp/components/base/bs-tooltip/element.js

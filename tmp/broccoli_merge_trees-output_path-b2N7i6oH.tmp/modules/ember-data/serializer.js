@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/broccoli_merge_trees-input_base_path-NclZLLdV.tmp/0/modules/ember-data/serializer.js

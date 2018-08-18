@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/broccoli_persistent_filtermapper-output_path-xIEc5Hq6.tmp/ember-bootstrap/register-version.template

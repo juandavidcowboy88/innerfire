@@ -1,0 +1,401 @@
+<div class="container-banner-profile">
+  <div class="banner-home">
+    <div class="cont-img-banner">
+      <img src="assets/images/teamMember.jpg" alt="">
+    </div>
+    <div class="cont-text-banner-profile">
+      <h2>Sebastien Brunet</h2>
+      <p>Developer of Innerfire. Vegan, dad, husband.</p>
+    </div>
+  </div>
+</div>
+<section id="section-topics">
+  <div class="container">
+    <div class="menu-topics">
+      {{#bs-tab customTabs=true as |tab|}}
+        {{#bs-nav type="tabs" as |nav|}}
+          {{#nav.item active=(bs-eq tab.activeId "pane1")}}
+            <a id="first-child-profile" href="" class="nav-link" role="tab" {{action tab.select "pane1"}}>ARTICLES<span class="badge">{{badge}}</span></a>
+          {{/nav.item}}
+          {{#nav.item active=(bs-eq tab.activeId "pane2")}}
+            <a href="" class="nav-link" role="tab" {{action tab.select "pane2"}}>INTEREST</a>
+          {{/nav.item}}
+          {{#nav.item active=(bs-eq tab.activeId "pane3")}}
+            <a href="" class="nav-link" role="tab" {{action tab.select "pane3"}}>FOLLOWING</a>
+          {{/nav.item}}
+          {{#nav.item active=(bs-eq tab.activeId "pane3")}}
+            <a href="" class="nav-link button-edit button-right" role="tab" >EDIT</a>
+          {{/nav.item}}
+        {{/bs-nav}}
+
+        <div class="tab-content">
+          {{#tab.pane elementId="pane1" title="ARTICLES"}}
+            <div class="row">
+              <div class="col-xs-12">
+                <article class="listing">
+                  <div class="col-xs-6 container-img-profile">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="container-topics-text">
+                      <h3 class="first-child-article">Don’t Worry About Job Burn-Out. Worry About Job Boredom</h3>
+                      <p class="hidden-xs">I believe that most of us have that power. In my experience, most of the noise is there by choice, but we’ve fallen into patterns over the years and it can seem like we’re not able to change them.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <a class="link-article" href="article">
+                  <article class="">
+                    <div class="container-img">
+                      <div class="img-post image-post1">
+                      </div>
+                    </div>
+                    <div class="container-text">
+                      <h3 class="container-title-post">Don’t Worry About Job Burn-Out. Worry About Job Boredom</h3>
+                      <p class="hidden-xs">I believe that most of us have that power. In my experience, most of the noise is there by choice,
+                         but we’ve fallen into patterns over the years</p>
+                    </div>
+                    <div class="footer-text hidden-xs">
+                      <p class="owner">ADAM RILEY</p>
+                      <p>DATE</p>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <a class="link-article" href="article">
+                  <article class="">
+                    <div class="container-img">
+                      <div class="img-post image-post2">
+                      </div>
+                    </div>
+                    <div class="container-text">
+                      <h3 class="container-title-post">How To Be Happy: A Scientific Perspective</h3>
+                      <p class="hidden-xs">I believe that most of us have that power. In my experience, most of the noise is there by choice,
+                         but we’ve fallen into patterns over the years</p>
+                    </div>
+                    <div class="footer-text hidden-xs">
+                      <p class="owner">SEBASTIEN BRUNET</p>
+                      <p>DATE</p>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <a class="link-article" href="article">
+                  <article class="">
+                    <div class="container-img">
+                      <div class="img-post image-post1">
+                      </div>
+                    </div>
+                    <div class="container-text">
+                      <h3 class="container-title-post">Don’t Worry About Job Burn-Out. Worry About Job Boredom</h3>
+                      <p class="hidden-xs">I believe that most of us have that power. In my experience, most of the noise is there by choice,
+                         but we’ve fallen into patterns over the years</p>
+                    </div>
+                    <div class="footer-text hidden-xs">
+                      <p class="owner">ADAM RILEY</p>
+                      <p>DATE</p>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <a class="link-article" href="article">
+                  <article class="">
+                    <div class="container-img">
+                      <div class="img-post image-post2">
+                      </div>
+                    </div>
+                    <div class="container-text">
+                      <h3 class="container-title-post">How To Be Happy: A Scientific Perspective</h3>
+                      <p class="hidden-xs">I believe that most of us have that power. In my experience, most of the noise is there by choice,
+                         but we’ve fallen into patterns over the years</p>
+                    </div>
+                    <div class="footer-text hidden-xs">
+                      <p class="owner">SEBASTIEN BRUNET</p>
+                      <p>DATE</p>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="select-topics">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+              </div>
+            </div>
+          {{/tab.pane}}
+          {{#tab.pane elementId="pane2" title="INTEREST"}}
+            <div class="container-fluid">
+              <div class="row">
+                <div class="cont-list-interests">
+                  <h3>All your interest</h3>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost.png" alt="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost2.png" alt="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost3.png" alt="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imPost4.png" alt="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost.png" alt="">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost.png" alt="">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cont-list-interests new-interests">
+                  <h3>Add new interests</h3>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost2.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost3.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost3.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost3.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost3.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="cont-list-interests new-interests">
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost3.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost3.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost3.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost3.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost3.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                      <div class="cont-img-modal-topics">
+                        <img src="assets/images/imgPost3.png" alt="">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/tab.pane}}
+          {{#tab.pane elementId="pane3" title="FOLLOWING"}}
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <h3 style="color:#6D636D; font-weight:300;">We are a big community, now you are just following to <strong>34 writers</strong></h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cont-list-interests">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="container-following">
+                      <div class="col-xs-12 col-sm-2">
+                        <a href="#">
+                          <div class="cont-img-modal-topics">
+                            <img src="assets/images/imgPost.png" alt="">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <a class="text-desc-profile" href="#">
+                          <p>Sebastien Brunet</p>
+                          <p id="desc-profile">Developer of Innerfire. Vegan, dad, husband.</p>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 margin-button">
+                        <a class="button-desc-profile" href="#">
+                          FOLLOW
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="container-following">
+                      <div class="col-xs-12 col-sm-2">
+                        <a href="#">
+                          <div class="cont-img-modal-topics">
+                            <img src="assets/images/imgPost.png" alt="">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <a class="text-desc-profile" href="#">
+                          <p>Sebastien Brunet</p>
+                          <p id="desc-profile">Developer of Innerfire. Vegan, dad, husband.</p>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 margin-button">
+                        <a class="button-desc-profile" href="#">
+                          FOLLOW
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="container-following">
+                      <div class="col-xs-12 col-sm-2">
+                        <a href="#">
+                          <div class="cont-img-modal-topics">
+                            <img src="assets/images/imgPost.png" alt="">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <a class="text-desc-profile" href="#">
+                          <p>Sebastien Brunet</p>
+                          <p id="desc-profile">Developer of Innerfire. Vegan, dad, husband.</p>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 margin-button">
+                        <a class="button-desc-profile" href="#">
+                          FOLLOW
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="container-following">
+                      <div class="col-xs-12 col-sm-2">
+                        <a href="#">
+                          <div class="cont-img-modal-topics">
+                            <img src="assets/images/imgPost.png" alt="">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <a class="text-desc-profile" href="#">
+                          <p>Sebastien Brunet</p>
+                          <p id="desc-profile">Developer of Innerfire. Vegan, dad, husband.</p>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-sm-4 margin-button">
+                        <a class="button-desc-profile" href="#">
+                          FOLLOW
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/tab.pane}}
+        </div>
+      {{/bs-tab}}
+      <!-- <ul class="topics">
+        <li class="hidden-xs">FEATURED</li>
+        <li class="hidden-xs">MEDITATION</li>
+        <li class="hidden-xs">LIFESTYLE</li>
+        <li class="hidden-xs">TRAVEL</li>
+        <li class="hidden-xs">MINDFULNESS</li>
+        <li class="hidden-xs">SPIRITUAL</li>
+        <li><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+      </ul> -->
+    </div>
+  </div>
+</section>

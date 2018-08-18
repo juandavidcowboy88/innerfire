@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/funnel-input_base_path-Xy4LlcMj.tmp/-private/adapters/build-url-mixin.js

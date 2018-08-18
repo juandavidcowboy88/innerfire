@@ -1,0 +1,306 @@
+<div class="container-banner-home">
+  <div class="banner-home">
+    <div class="cont-text-banner">
+      <h1 class="hidden-xs">BLOG/FORUM</h1>
+      <p><span class="hidden-xs">&</span> social network where consciousness is the context</p>
+    </div>
+    <div class="button-home">
+      {{#link-to 'home' class="button" }}
+        TELL YOUR STORY
+      {{/link-to}}
+    </div>
+  </div>
+</div>
+<section id="section-topics">
+  <div class="container-fluid">
+    <div class="menu-topics">
+      <ul class="topics">
+        <a href="topics"><li class="hidden-xs">FEATURED</li></a>
+        <a href="topics"><li class="hidden-xs">MEDITATION</li></a>
+        <a href="topics"><li class="hidden-xs">LIFESTYLE</li></a>
+        <a href="topics"><li class="hidden-xs">TRAVEL</li></a>
+        <a href="topics"><li class="hidden-xs">MINDFULNESS</li></a>
+        <a href="topics"><li class="hidden-xs">SPIRITUAL</li></a>
+        <li class="">
+          {{#bs-modal open=modal4 size="lg" onHidden=(action (mut modal4) false) as |modal|}}
+            <div class="modal-search-header">
+              {{#modal.header}}
+              <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                      <img src="assets/images/logo.png" alt="">
+                    </a>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#">CONSCIOUSNESS & TOPICS</a></li>
+                      <li><a href="#">INSPIRATION</a></li>
+                      <li><a href="#">CONNECT</a></li>
+                      <li><a href="#">LOGIN</a></li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+                </nav>
+              {{/modal.header}}
+            </div>
+            <div class="modal-search-body">
+              {{#modal.body}}
+                <div class="form-modal-search">
+                  <div class="cont-input-modal">
+                    <input type="text" autofocus="autofocus">
+                  </div>
+                </div>
+                <div class="container-search-list">
+                  <div class="row">
+                    <div class="col-sm-4 hidden-xs cont-members cont-articles">
+                      <ul class="list-members-search">
+                        <h4>MEMBERS</h4>
+                        <li>
+                          <a href="login">
+                            <img src="assets/images/teamMember.jpg" alt="">
+                            <span>Sebastien Brunet</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="login">
+                            <img src="assets/images/teamMember.jpg" alt="">
+                            <span>Sebastien Brunet</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="login">
+                            <img src="assets/images/teamMember.jpg" alt="">
+                            <span>Sebastien Brunet</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 articles">
+                      <div class="row cont-articles">
+                        <div class="col-xs-12 col-sm-6">
+                          <h4>ARTICLES</h4>
+                          <a href="article">
+                            <img src="assets/images/imgSearch1.png" alt="">
+                          </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                          <a href="article">
+                            <h3>Don’t Worry About Job Burn-Out. Worry About Job Boredom</h3>
+                          </a>
+                          <a href="topics"><p>LIFESTYLE</p></a>
+                        </div>
+                      </div>
+                      <div class="row cont-articles">
+                        <div class="col-xs-12 col-sm-6">
+                          <a href="article">
+                            <img src="assets/images/imgSearch2.png" alt="">
+                          </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                          <a href="article">
+                            <h3>How To Be Happy: A Scientific Perspective </h3>
+                          </a>
+                          <a href="topics"><p>AWARENESS</p></a>
+                        </div>
+                      </div>
+                      <div class="row cont-articles">
+                        <div class="col-xs-12 col-sm-6">
+                          <a href="article"><img src="assets/images/imgSearch3.png" alt=""></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                          <a href="article"><h3>To Everyone Who Feels Behind: Your Work Matters</h3></a>
+                          <a href="topics"><p>PRODUCTIVITY</p></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {{/modal.body}}
+            </div>
+          {{/bs-modal}}
+          {{#bs-button onClick=(action (mut modal4) true)}}
+            <!-- <img src="assets/images/lupa.png"/> -->
+            <!-- <span class="glyphicon glyphicon-search"></span> -->
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          {{/bs-button}}
+        </li>
+      </ul>
+    </div>
+    <div class="link-topics">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <a class="link-article" href="article">
+            <article class="">
+              <div class="container-img">
+                <div class="img-post image-post1">
+                </div>
+              </div>
+              <div class="container-text">
+                <h3 class="container-title-post">Don’t Worry About Job Burn-Out. Worry About Job Boredom</h3>
+                <p class="hidden-xs">I believe that most of us have that power. In my experience, most of the noise is there by choice,
+                   but we’ve fallen into patterns over the years</p>
+              </div>
+              <div class="footer-text hidden-xs">
+                <p class="owner">ADAM RILEY</p>
+                <p>DATE</p>
+              </div>
+            </article>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <a class="link-article" href="article">
+            <article class="">
+              <div class="container-img">
+                <div class="img-post image-post2">
+                </div>
+              </div>
+              <div class="container-text">
+                <h3 class="container-title-post">How To Be Happy: A Scientific Perspective</h3>
+                <p class="hidden-xs">I believe that most of us have that power. In my experience, most of the noise is there by choice,
+                   but we’ve fallen into patterns over the years</p>
+              </div>
+              <div class="footer-text hidden-xs">
+                <p class="owner">SEBASTIEN BRUNET</p>
+                <p>DATE</p>
+              </div>
+            </article>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <a class="link-article" href="article">
+            <article class="article-col-4" style="margin-left: 47px;">
+              <div class="container-img">
+                <div class="img-post image-post3">
+                </div>
+              </div>
+              <div class="container-text">
+                <h3 class="container-title-post">To Everyone Who Feels Behind: Your Work Matters</h3>
+                <p class="hidden-xs">I believe that most of us have that power. In my experience, most of the noise is there by choice,
+                   but we’ve fallen into patterns over the years</p>
+              </div>
+              <div class="footer-text hidden-xs">
+                <p class="owner">ASHLEY PATTERN</p>
+                <p>DATE</p>
+              </div>
+            </article>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-4 hidden-xs">
+          <a class="link-article" href="article">
+            <article class="article-col-4">
+              <div class="container-img">
+                <div class="img-post image-post4">
+                </div>
+              </div>
+              <div class="container-text">
+                <h3 class="container-title-post">To Everyone Who Feels Behind: Your Work Matters</h3>
+                <p class="hidden-xs">I believe that most of us have that power. In my experience, most of the noise is there by choice,
+                   but we’ve fallen into patterns over the years</p>
+              </div>
+              <div class="footer-text hidden-xs">
+                <p class="owner">SEBASTIEN BRUNET</p>
+                <p>DATE</p>
+              </div>
+            </article>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-4 hidden-xs">
+          <a class="link-article" href="article">
+            <article class="article-col-4" style="margin-right: 47px;">
+              <div class="container-img">
+                <div class="img-post image-post3">
+                </div>
+              </div>
+              <div class="container-text">
+                <h3 class="container-title-post">To Everyone Who Feels Behind: Your Work Matters</h3>
+                <p class="hidden-xs">I believe that most of us have that power. In my experience, most of the noise is there by choice,
+                   but we’ve fallen into patterns over the years</p>
+              </div>
+              <div class="footer-text hidden-xs">
+                <p class="owner">SEBASTIEN BRUNET</p>
+                <p>DATE</p>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="button-topics text-center">
+    {{#link-to 'topics' class="button" }}
+      EXPLORE TOPICS
+    {{/link-to}}
+  </div>
+</section>
+<section id="section-inspiration">
+  <div class="banner-inspiration">
+    <div class="text-inspiration text-center">
+      <h2>INSPIRATION</h2>
+      <p>Explore ourt sources of inspiration related to consciousness</p>
+    </div>
+  </div>
+  <div class="carousel-container hidden-xs">
+    {{#bs-carousel nextControlIcon='glyphicon glyphicon-chevron-right'
+                   nextControlLabel='Suivant'
+                   prevControlIcon='glyphicon glyphicon-chevron-left'
+                   prevControlLabel='Précédent'
+                   showIndicators=true as |car|}}
+      {{#car.slide}}
+        <img alt='First slide' src='assets/images/imgInspiration.png'>
+      {{/car.slide}}
+      {{#car.slide}}
+        <img alt='First slide' src='assets/images/imgPost2.png'>
+      {{/car.slide}}
+      {{#car.slide}}
+        <img alt='First slide' src='assets/images/imgLogin.png'>
+      {{/car.slide}}
+    {{/bs-carousel}}
+  </div>
+  <div class="links-inspiration">
+    <ul class="list-links-inspiration row">
+      <li class="col-xs-6 col-sm-3">
+        <div class="cont-img-inspirations">
+        </div>
+        <p>BOOKS</p>
+      </li>
+      <li class="col-xs-6 col-sm-3">
+        <div class="cont-img-inspirations">
+        </div>
+        <p>QUESTIONS</p>
+      </li>
+      <li class="col-xs-6 col-sm-3">
+        <div class="cont-img-inspirations">
+        </div>
+        <p>QUOTES</p>
+      </li>
+      <li class="col-xs-6 col-sm-3">
+        <div class="cont-img-inspirations">
+        </div>
+        <p>MEDIA</p>
+      </li>
+      <li class="col-xs-6 col-xs-offset-6 col-sm-3 col-sm-offset-0">
+        <div class="cont-img-inspirations">
+        </div>
+        <p>MEDIA</p>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="section-consciousness">
+  <div class="banner-consciousness">
+    <div class="" style="height: 100%; background:rgba(54, 16, 8, 0.15);">
+      <div class="text-consciousness">
+        <h2>CONSCIOUSNESS</h2>
+        <p>Social network, blog & forum</p>
+      </div>
+      <div class="button-consciousness">
+        {{#link-to 'home' class="button" }}
+          TELL YOUR STORY
+        {{/link-to}}
+      </div>
+    </div>
+  </div>
+</section>

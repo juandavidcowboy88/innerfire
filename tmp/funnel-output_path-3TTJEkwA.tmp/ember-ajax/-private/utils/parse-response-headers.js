@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/funnel-input_base_path-8lanCWmW.tmp/-private/utils/parse-response-headers.js

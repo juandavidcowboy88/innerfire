@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/node_modules/ember-bootstrap/app/helpers/bs-eq.js

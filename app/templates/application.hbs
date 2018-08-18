@@ -1,0 +1,174 @@
+<!-- Fixed navbar -->
+  <nav id="custom-nav" class="nav-down own-nav navbar navbar-default navbar-fixed-top">
+    <div class="containerNavMenu container-fluid">
+      <div class="navbarHeader">
+        {{#bs-modal open=modal1 onHidden=(action (mut modal1) false) as |modal|}}
+          <div class="header-explore">
+            {{#modal.header}}
+            {{/modal.header}}
+          </div>
+          <div class="body-modal-explore">
+            {{#modal.body}}
+              <div class="">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="menu-modal-nav">
+                      <div class="container-list-modal">
+                        <h6>SOURCES OF INSPIRATION</h6>
+                        <ul class="menu-sources">
+                          <li> <a href="#">Quotes</a></li>
+                          <li> <a href="#">Questions</a></li>
+                          <li> <a href="#">Books</a> </li>
+                          <li> <a href="#">Media</a></li>
+                          <li> <a href="#">Concepts</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="container-list-modal">
+                        <h6>TOPICS</h6>
+                        <ul class="menu-topics-modal">
+                          <li> <a href="#">Productivity</a></li>
+                          <li> <a href="#"> Health</a></li>
+                          <li> <a href="#">Travel</a></li>
+                          <li> <a href="#">Lifestyle</a></li>
+                          <li> <a href="#">See more</a></li>
+                        </ul>
+                      </div>
+
+                      <div class="container-list-modal">
+                        <h6>COMMUNITY</h6>
+                        <ul class="menu-community">
+                          <li> <a href="#">Become a member</a></li>
+                          <li> <a href="#">Search member</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="container-list-modal">
+                      {{#bs-dropdown tagName="span" as |dd|}}
+                        <div class="link-translate">
+                          {{#dd.toggle}}ES<span class="caret"></span>{{/dd.toggle}}
+                        </div>
+                        {{#dd.menu as |menu|}}
+                          {{#menu.item}}
+                            {{#menu.link-to "home"}}ENG{{/menu.link-to}}
+                          {{/menu.item}}
+                        {{/dd.menu}}
+                      {{/bs-dropdown}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/modal.body}}
+          </div>
+          <div class="modal-footer-container">
+            {{#modal.footer}}
+              <span>Be part of a great and consciousness community</span>
+              <div class="button-modal-nav">
+                {{#bs-button type="success" onClick=(action modal.submit)}}TELL YOUR STORY{{/bs-button}}
+              </div>
+            {{/modal.footer}}
+          </div>
+        {{/bs-modal}}
+        {{#bs-button onClick=(action (mut modal1) true)}}
+          <img src="assets/images/hamburger.svg" class="img-menu"alt="">
+          <span class="hidden-xs">EXPLORE</span>
+        {{/bs-button}}
+      </div>
+      <div class="navCenter">
+        <ul class="nav navbar-nav ulNavImage" style="width: 100%;">
+          <li style="width: 100%;"><a href="home" class="logo-link" style="text-align:center"> <img src="assets/images/logo.png" alt=""> </a></li>
+        </ul>
+      </div>
+      <div class="hidden-sm hidden-md hidden-lg navMobileRight">
+        {{#bs-button onClick=(action (mut modal2) true)}}<img src="assets/images/navProfile.svg" alt="">{{/bs-button}}
+        <!-- <span style="font-size:30px; color:#fff;" class="glyphicon glyphicon-user" aria-hidden="true"></span> -->
+      </div>
+      <div id="" class="hidden-xs navbarLeft">
+        <ul class="nav navbar-nav">
+          <li>
+            {{#bs-modal open=modal2 size="sm" onHidden=(action (mut modal2) false) as |modal|}}
+              <div class="modal-signup-header">
+                {{#modal.header}}
+                {{/modal.header}}
+              </div>
+              {{#modal.body}}
+                <div class="form-modal">
+                  <h3 style="display:inline-block"><a href="#">Sign Up</a></h3>
+                  <h3 style="display:inline-block"><a href="#">Log In</a></h3>
+                  <div class="cont-input-modal">
+                    <input type="text" autofocus="autofocus" style="height: auto">
+                  </div>
+                  <div class="cont-input-modal">
+                    <input type="text" autofocus="autofocus" style="height: auto">
+                  </div>
+                  <div class="cont-input-modal">
+                    
+                  </div>
+                  <div class="cont-input-modal">
+                    <button type="button" name="button">SIGN UP</button>
+                  </div>
+                  <div class="footer-moda-sm">
+                    <div class="">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <img class="img-social-modal" src="assets/images/Facebook.png" alt=""><p class="text-social-modal">Sign up with facebook</p>
+                        </div>
+                        <div class="col-xs-6">
+                          <img id="google" class="img-social-modal" src="assets/images/google.png" alt=""> <p class="text-social-modal">Sign up with google</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img class="hidden-xs"src="assets/images/imgLogin.png" alt="">
+              {{/modal.body}}
+            {{/bs-modal}}
+            {{#bs-button onClick=(action (mut modal2) true)}}SIGN UP{{/bs-button}}
+          </li>
+          <li>
+            {{#bs-modal open=modal3 size="sm" onHidden=(action (mut modal3) false) as |modal|}}
+            {{/bs-modal}}
+            {{#bs-button onClick=(action (mut modal3) true)}}LOG IN{{/bs-button}}
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  {{outlet}}
+
+  <footer class="section-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="social-net-logo">
+            <p class="social-net hidden-xs">Social network, blog &</p>
+            <p class="hidden-xs">forum</p>
+          </div>
+          <div class="">
+            <img src="assets/images/logo2.png" alt="">
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <h6>ABOUT</h6>
+          <ul class="list-footer">
+            <li> <a href="#">Terms and conditions</a> </li>
+            <li> <a href="#">About this projects</a> </li>
+            <li> <a href="#">Contact</a> </li>
+            <li> <a href="#">Feedback</a> </li>
+            <li> <a href="#">Español</a> </li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <h6>SOCIAL</h6>
+          <ul class="list-footer">
+            <li> <a href="#">Facebook</a> </li>
+            <li> <a href="#">Become a member</a> </li>
+            <li> <a href="#">Search members</a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>

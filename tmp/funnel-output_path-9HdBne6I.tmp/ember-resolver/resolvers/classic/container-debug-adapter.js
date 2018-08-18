@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/funnel-input_base_path-isoo7rVL.tmp/resolvers/classic/container-debug-adapter.js

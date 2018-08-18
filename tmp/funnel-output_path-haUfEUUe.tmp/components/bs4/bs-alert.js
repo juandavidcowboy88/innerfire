@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/funnel-input_base_path-nMytMAZE.tmp/components/bs4/bs-alert.js

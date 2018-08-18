@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/funnel-input_base_path-TJLOvn4o.tmp/ember-bootstrap/register-version.template

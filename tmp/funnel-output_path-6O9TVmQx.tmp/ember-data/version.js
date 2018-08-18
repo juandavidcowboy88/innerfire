@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/creator-output_path-LdtSoB3X.tmp/version.js

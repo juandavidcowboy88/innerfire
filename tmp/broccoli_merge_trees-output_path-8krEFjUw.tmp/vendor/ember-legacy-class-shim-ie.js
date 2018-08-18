@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/node_modules/ember-legacy-class-shim/vendor/ember-legacy-class-shim-ie.js

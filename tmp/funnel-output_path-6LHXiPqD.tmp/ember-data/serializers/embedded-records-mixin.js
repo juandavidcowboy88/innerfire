@@ -1,0 +1,1 @@
+/Users/saraisabelsantacruzcano/Code/ember/test-app/tmp/funnel-input_base_path-viOaHZ1h.tmp/serializers/embedded-records-mixin.js
